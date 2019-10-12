@@ -6,8 +6,7 @@ double a=0;
 char b;
 double c=0;
 double d=0;
-double e=0;
-
+    
 cout << "Please enter a number,an expression(+ - / *),a number.\n";
 if(cin){
 cin>>a>>b>>c; 
