@@ -76,7 +76,6 @@ return 0;
 //feladat7-11ig
 
 
-
 #include "std_lib_facilities.h"
 
 int main()
