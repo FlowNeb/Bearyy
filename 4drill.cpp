@@ -11,12 +11,15 @@ double b=0;
 
 while (cin>>a>>b)  
 {         
+if (a>b)  {cout<<"larger value: "<<a<<" smaller value: "<<b<<"\n";
+if ((b-a)<(1.0/100))  {cout<<"the numbers are almost equal \n";} }
 
-if (a>b)  {cout<<"larger value: "<<a<<" smaller value: "<<b<<"\n";}
-if (b>a)  {cout<<"larger value: "<<b<<" smaller value: "<<a<<"\n";}
+if (b>a)  {cout<<"larger value: "<<b<<" smaller value: "<<a<<"\n";
+if ((a-b)<(1.0/100))  {cout<<"the numbers are almost equal \n";} }
+
 if (a==b) {cout<<"the numbers are equal.\n";}
-
-if ((a-b)<(1.0/100))  {cout<<"the numbers are almost equal \n";}
+if (a == '|') {break;}
+if (b == '|') {break;}
 }
 
 
@@ -47,7 +50,7 @@ double large;
 
 while(cin>>a)
 {
- cout<<a<<"\n";
+
  if(x){
 small = a;
 large = a;
@@ -63,12 +66,12 @@ else if (a>large)
     cout<<"the largest so far"<<"\n";
     
 }
+else if (a == '|') {break;}
 
 }
 return 0;
 
 }
-
 
 
 
@@ -108,6 +111,8 @@ else if (unit == "ft"){
 a=a/100*2.54*12;
 sum=sum+a;
 count++;}
+else if (a == '|') {break;}
+
 else{cout<<"illegal or wrong unite\n";} 
 
 if(x)
